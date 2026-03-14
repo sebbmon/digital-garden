@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState } from "react";
 import { dictionaries, Language, Dictionary } from "./dictionaries";
 
 type LanguageContextType = {
@@ -11,17 +11,12 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export function LanguageProvider({ children, initialLanguage = "en" }: { children: React.ReactNode, initialLanguage?: Language }) {
+export function LanguageProvider({ children, initialLanguage }: { children: React.ReactNode, initialLanguage: Language }) {
     const [language, setLanguageState] = useState<Language>(initialLanguage);
-
-    useEffect(() => {
-        // Enforce the initial language in cookies and localStorage on mount
-        document.cookie = `language=${initialLanguage}; path=/; max-age=31536000`;
-        localStorage.setItem("language", initialLanguage);
-    }, [initialLanguage]);
 
     const setLanguage = (lang: Language) => {
         setLanguageState(lang);
+
         localStorage.setItem("language", lang);
         document.cookie = `language=${lang}; path=/; max-age=31536000`;
     };

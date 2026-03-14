@@ -26,7 +26,7 @@ export function Hero() {
 
                 {/* Subtle badge */}
                 <div className="inline-block px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 text-sm font-medium text-foreground/80 mb-4">
-                    Available for new opportunities
+                    {t.hero.collab}
                 </div>
 
                 <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight text-foreground">

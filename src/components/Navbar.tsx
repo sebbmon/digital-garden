@@ -18,7 +18,6 @@ export function Navbar() {
     ];
 
     useEffect(() => {
-        // Initialize theme based on localStorage, default to light
         const storedTheme = localStorage.getItem("theme");
         if (storedTheme === "dark") {
             setIsDarkMode(true);
@@ -26,16 +25,6 @@ export function Navbar() {
         } else {
             setIsDarkMode(false);
             document.documentElement.classList.remove("dark");
-        }
-    }, []);
-
-    useEffect(() => {
-        // Initialize language based on localStorage or browser preference
-        const storedLang = localStorage.getItem("language") as 'en' | 'pl';
-        if (storedLang === 'en' || storedLang === 'pl') {
-            setLanguage(storedLang);
-        } else if (typeof navigator !== 'undefined' && navigator.language.toLowerCase().includes('pl')) {
-            setLanguage('pl');
         }
     }, []);
 

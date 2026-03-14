@@ -8,6 +8,7 @@ export const dictionaries = {
             contact: "Contact"
         },
         hero: {
+            collab: "Available for new opportunities",
             greeting: "Hello, my name is",
             name: "Sebastian",
             tagline: "I build exceptional and accessible digital experiences for the web. Focused on minimal design and simplicity.",
@@ -134,6 +135,7 @@ export const dictionaries = {
             contact: "Kontakt"
         },
         hero: {
+            collab: "Otwarty na podjęcie współpracy",
             greeting: "Cześć, jestem",
             name: "Sebastian",
             tagline: "Projektuję i tworzę nowoczesne aplikacje webowe, koncentrując się na prostocie i minimalistycznym designie.",
