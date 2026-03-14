@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['images.unsplash.com'],
   },
+  i18n: {
+    locales: ['en', 'pl'],
+    defaultLocale: 'en',
+    localeDetection: false,
+  },
 };
 
 export default nextConfig;
