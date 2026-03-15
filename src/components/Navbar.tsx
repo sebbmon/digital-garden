@@ -19,13 +19,7 @@ export function Navbar() {
 
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme");
-        if (storedTheme === "dark") {
-            setIsDarkMode(true);
-            document.documentElement.classList.add("dark");
-        } else {
-            setIsDarkMode(false);
-            document.documentElement.classList.remove("dark");
-        }
+        setIsDarkMode(storedTheme === "dark");
     }, []);
 
     const toggleLanguage = () => {
@@ -71,7 +65,7 @@ export function Navbar() {
         >
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    {/* Logo */}
+                    {/* logowka */}
                     <div className="flex-shrink-0">
                         <a
                             href="#home"
@@ -82,7 +76,7 @@ export function Navbar() {
                         </a>
                     </div>
 
-                    {/* Desktop Navigation */}
+                    {/* navi */}
                     <nav className="hidden md:block">
                         <ul className="flex space-x-8">
                             {navLinks.map((link) => (
@@ -100,7 +94,7 @@ export function Navbar() {
                     </nav>
 
                     <div className="flex items-center gap-2 sm:gap-4">
-                        {/* Language Toggler */}
+                        {/* lang toggler */}
                         <button
                             onClick={toggleLanguage}
                             className="p-1.5 flex items-center justify-center rounded-full border border-foreground/10 hover:border-primary/50 transition-all bg-foreground/5 shadow-sm overflow-hidden w-9 h-9"
@@ -114,26 +108,23 @@ export function Navbar() {
                             />
                         </button>
 
-                        {/* Theme Toggler */}
+                        {/* theme toggler */}
                         <button
                             onClick={toggleTheme}
                             className="p-2 text-foreground/80 hover:text-primary transition-colors focus:outline-none rounded-full"
                             aria-label="Toggle dark mode"
                         >
-                            {isDarkMode ? (
-                                // Sun icon for switching to light mode
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                                </svg>
-                            ) : (
-                                // Moon icon for switching to dark mode
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                                </svg>
-                            )}
+                            {/* ikonka slonca */}
+                            <svg className="hidden dark:block w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                            {/* ikonka ksiezyca */}
+                            <svg className="block dark:hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
                         </button>
 
-                        {/* Mobile Menu Button */}
+                        {/* ikonka dla mobilkow */}
                         <div className="md:hidden">
                             <button
                                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -169,7 +160,7 @@ export function Navbar() {
                 </div>
             </div>
 
-            {/* Mobile Navigation Dropdown */}
+            {/* navi dropd */}
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-foreground/10 absolute w-full left-0 top-16 shadow-lg">
                     <ul className="px-2 pt-2 pb-4 space-y-1 sm:px-3">

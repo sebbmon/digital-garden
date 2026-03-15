@@ -24,13 +24,29 @@ export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
 
-  // Read language preference from cookies (set by LanguageContext). Default strictly to "en".
   const cookieStore = await cookies();
   const langCookie = cookieStore.get("language")?.value;
   const initialLanguage: Language = langCookie === "pl" ? "pl" : "en";
 
   return (
-    <html lang={initialLanguage}>
+    <html lang={initialLanguage} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme');
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
+
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <LanguageProvider initialLanguage={initialLanguage}>
           {children}

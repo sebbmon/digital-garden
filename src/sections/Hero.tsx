@@ -13,7 +13,7 @@ export function Hero() {
         >
             <div className="max-w-3xl space-y-8 animate-fade-in-up flex flex-col items-center">
 
-                {/* Profile Image */}
+                {/* prof image */}
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-background shadow-xl ring-2 ring-primary/20 mb-6">
                     <Image
                         src="/images/me/CVph.jpg"
@@ -24,7 +24,7 @@ export function Hero() {
                     />
                 </div>
 
-                {/* Subtle badge */}
+                {/* badge */}
                 <div className="inline-block px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 text-sm font-medium text-foreground/80 mb-4">
                     {t.hero.collab}
                 </div>
@@ -53,7 +53,7 @@ export function Hero() {
                 </div>
             </div>
 
-            {/* Scroll indicator down arrow */}
+            {/* strzalka w dol */}
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
                 <a href="#about" className="text-foreground/40 hover:text-primary transition-colors">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

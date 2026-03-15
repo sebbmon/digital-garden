@@ -12,12 +12,12 @@ export function Contact() {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate network request
+        // symulacja wysylania
         setTimeout(() => {
             setIsSubmitting(false);
             setIsSubmitted(true);
 
-            // Reset after showing success message
+            // reset po wyslaniu
             setTimeout(() => {
                 setIsSubmitted(false);
             }, 5000);
