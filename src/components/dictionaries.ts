@@ -144,7 +144,7 @@ export const dictionaries = {
         },
         about: {
             title: "O mnie",
-            p1: "Jestem inżynierem oprogramowania z pasją do tworzenia pięknych, intuicyjnych i wysoce wydajnych aplikacji internetowych. Dzięki doświadczeniu w nowoczesnych technologiach weebowych zamieniam skomplikowane problemy w proste, eleganckie rozwiązania.",
+            p1: "Jestem inżynierem oprogramowania z pasją do tworzenia pięknych, intuicyjnych i wysoce wydajnych aplikacji internetowych. Dzięki doświadczeniu w nowoczesnych technologiach webowych zamieniam skomplikowane problemy w proste, eleganckie rozwiązania.",
             p2: "Moja podróż z programowaniem rozpoczęła się w 2017 roku. Od tego czasu nieustannie zgłębiam nowe wzorce architektoniczne, optymalizuję wydajność i tworzę funkcjonalne aplikacje.",
             p3: "Kiedy nie koduję, najprawdopodobniej gram w piłkę nożną lub podróżuję.",
             techTitle: "Technologie, z którymi pracuję:"
