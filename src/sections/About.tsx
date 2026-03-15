@@ -17,22 +17,22 @@ export function About() {
             "Bootstrap"
         ],
         Backend: ["Python", "Django", "REST APIs"],
-        Databases: ["SQL", "Relational databases"],
-        "DevOps & Tools": [
-            "Git",
+        Databases: ["Relational databases", "NoSQL databases"],
+        "DevOps & Cloud": [
             "Docker",
             "Docker Compose",
             "CI/CD",
+            "Azure"
+        ],
+        Tools: [
+            "Git",
             "Linux",
             "Windows"
         ],
-        Testing: [
-            "Selenium",
-            "Basic automated testing"
-        ],
         Concepts: [
             "Web application architecture",
-            "Debugging"
+            "Debugging",
+            "Basic automated testing"
         ]
     };
 

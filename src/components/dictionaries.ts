@@ -97,14 +97,14 @@ export const dictionaries = {
                 },
                 {
                     id: 4,
-                    title: "Simple ToDo Application",
-                    description: "My first Django project which served as a key learning experience for building full-stack applications",
-                    longDescription: "A simple Task Manager that allows users to create, edit, delete, and mark tasks as completed or incomplete",
-                    features: ["Task management - Full CRUD", "Task status toggling", "Task prioritization", "Sorting and filtering", "ResponsiveDesign"],
-                    image: "/images/projects/todo/1.png",
-                    tags: ["Python", "Django", "SQLite", "Bootstrap"],
-                    link: "https://github.com/sebbmon/todo",
-                    images: ["/images/projects/todo/1.png"]
+                    title: "Database Performance Benchmark",
+                    description: "Performance comparison of relational and NoSQL databases using a large-scale dataset and automated test scenarios.",
+                    longDescription: "A large-scale benchmark project comparing the performance of relational and NoSQL database systems. The environment was fully containerized using Docker Compose and included MySQL, PostgreSQL, MongoDB, and Cassandra. The system generated over 10 million records using Python and Faker and executed multiple query scenarios to evaluate performance, scalability, and response times across different database architectures.",
+                    features: ["Benchmark of four database engines (MySQL, PostgreSQL, MongoDB, Cassandra)", "Automated generation of 10 million records using Python and Faker", "24 database query performance scenarios", "Fully containerized test environment using Docker Compose", "Comparative analysis of relational vs NoSQL databases"],
+                    image: "/images/projects/benchmark/1.png",
+                    tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
+                    link: "https://github.com/sebbmon/ztbd-IT-equipment",
+                    images: ["/images/projects/benchmark/1.png", "/images/projects/benchmark/2.png"]
                 }
             ]
         },
@@ -224,14 +224,14 @@ export const dictionaries = {
                 },
                 {
                     id: 4,
-                    title: "Prosta Aplikacja ToDo",
-                    description: "Mój pierwszy projekt w technologii Django, który posłużył jako kluczowe środowisko do nauki tworzenia aplikacji full-stack.",
-                    longDescription: "Prosty menedżer zadań, z możliwością tworzenia, edytowania, usuwania i zaznaczania zadań jako ukończone lub nieukończone.",
+                    title: "Benchmark wydajności baz danych",
+                    description: "Porównanie wydajności relacyjnych i nierelacyjnych baz danych z użyciem dużego zbioru danych oraz scenariuszy testowych.",
+                    longDescription: "Projekt benchmarkowy porównujący wydajność relacyjnych i nierelacyjnych systemów baz danych. Środowisko testowe zostało w pełni skonteneryzowane przy użyciu Docker Compose i obejmowało bazy MySQL, PostgreSQL, MongoDB oraz Cassandra. System wygenerował ponad 10 milionów rekordów przy użyciu Pythona i biblioteki Faker, a następnie wykonał wiele scenariuszy zapytań w celu oceny wydajności, skalowalności oraz czasu odpowiedzi różnych architektur baz danych.",
                     features: ["Zarządzanie zadaniami", "Zmiana statusów zadań", "Priorytetyzacja zadań", "Sortowanie i filtrowanie", "Responsywny design"],
-                    image: "/images/projects/todo/1.png",
-                    tags: ["Python", "Django", "SQLite", "Bootstrap"],
-                    link: "https://github.com/sebbmon/todo",
-                    images: ["/images/projects/todo/1.png"]
+                    image: "/images/projects/benchmark/1.png",
+                    tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
+                    link: "https://github.com/sebbmon/ztbd-IT-equipment",
+                    images: ["/images/projects/benchmark/1.png", "/images/projects/benchmark/2.png"]
                 }
             ]
         },
