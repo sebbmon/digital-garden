@@ -8,20 +8,27 @@ export function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // symulacja wysylania
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setIsSubmitted(true);
+        const form = e.currentTarget;
+        const data = new FormData(form);
 
-            // reset po wyslaniu
-            setTimeout(() => {
-                setIsSubmitted(false);
-            }, 5000);
-        }, 1500);
+        const res = await fetch("https://formspree.io/f/mgonppdj", {
+            method: "POST",
+            body: data,
+            headers: {
+                Accept: "application/json",
+            },
+        });
+
+        if (res.ok) {
+            setIsSubmitted(true);
+            form.reset();
+        }
+
+        setIsSubmitting(false);
     };
 
     return (
