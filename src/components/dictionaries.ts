@@ -71,7 +71,7 @@ export const dictionaries = {
                     image: "/images/projects/signage/2.png",
                     tags: ["TypeScript", "Angular", "HTML / CSS", "Docker", "Docker Compose", "CI/CD", "Linux"],
                     link: "https://github.com/sebbmon/digital-signage-frontend",
-                    images: ["/images/projects/signage/1.png", "/images/projects/signage/2.png", "/images/projects/signage/3.png", "/images/projects/signage/4.png", "/images/projects/signage/5.png", "/images/projects/signage/6.png", "/images/projects/signage/7.png", "/images/projects/signage/8.png"]
+                    images: ["/images/projects/signage/1.webp", "/images/projects/signage/2.webp", "/images/projects/signage/3.webp", "/images/projects/signage/4.webp", "/images/projects/signage/5.webp", "/images/projects/signage/6.webp", "/images/projects/signage/7.webp", "/images/projects/signage/8.webp"]
                 },
                 {
                     id: 2,
@@ -82,7 +82,7 @@ export const dictionaries = {
                     image: "/images/projects/moncar/1.png",
                     tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
-                    images: ["/images/projects/moncar/1.png", "/images/projects/moncar/2.png", "/images/projects/moncar/3.png", "/images/projects/moncar/4.png", "/images/projects/moncar/5.png"]
+                    images: ["/images/projects/moncar/1.webp", "/images/projects/moncar/2.webp", "/images/projects/moncar/3.webp", "/images/projects/moncar/4.webp", "/images/projects/moncar/5.webp"]
                 },
                 {
                     id: 3,
@@ -93,7 +93,7 @@ export const dictionaries = {
                     image: "/images/projects/blog/1.png",
                     tags: ["Python", "Django", "JavaScript", "SQLite", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/blog",
-                    images: ["/images/projects/blog/1.png", "/images/projects/blog/2.png", "/images/projects/blog/3.png"]
+                    images: ["/images/projects/blog/1.webp", "/images/projects/blog/2.webp", "/images/projects/blog/3.webp"]
                 },
                 {
                     id: 4,
@@ -104,7 +104,7 @@ export const dictionaries = {
                     image: "/images/projects/benchmark/1.png",
                     tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
                     link: "https://github.com/sebbmon/ztbd-IT-equipment",
-                    images: ["/images/projects/benchmark/1.png", "/images/projects/benchmark/2.png"]
+                    images: ["/images/projects/benchmark/1.webp", "/images/projects/benchmark/2.webp"]
                 }
             ]
         },
@@ -198,7 +198,7 @@ export const dictionaries = {
                     image: "/images/projects/signage/2.png",
                     tags: ["TypeScript", "Angular", "HTML / CSS", "Docker", "Docker Compose", "CI/CD", "Linux"],
                     link: "https://github.com/sebbmon/digital-signage-frontend",
-                    images: ["/images/projects/signage/1.png", "/images/projects/signage/2.png", "/images/projects/signage/3.png", "/images/projects/signage/4.png", "/images/projects/signage/5.png", "/images/projects/signage/6.png", "/images/projects/signage/7.png", "/images/projects/signage/8.png"]
+                    images: ["/images/projects/signage/1.webp", "/images/projects/signage/2.webp", "/images/projects/signage/3.webp", "/images/projects/signage/4.webp", "/images/projects/signage/5.webp", "/images/projects/signage/6.webp", "/images/projects/signage/7.webp", "/images/projects/signage/8.webp"]
                 },
                 {
                     id: 2,
@@ -209,7 +209,7 @@ export const dictionaries = {
                     image: "/images/projects/moncar/1.png",
                     tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
-                    images: ["/images/projects/moncar/1.png", "/images/projects/moncar/2.png", "/images/projects/moncar/3.png", "/images/projects/moncar/4.png", "/images/projects/moncar/5.png"]
+                    images: ["/images/projects/moncar/1.webp", "/images/projects/moncar/2.webp", "/images/projects/moncar/3.webp", "/images/projects/moncar/4.webp", "/images/projects/moncar/5.webp"]
                 },
                 {
                     id: 3,
@@ -220,7 +220,7 @@ export const dictionaries = {
                     image: "/images/projects/blog/1.png",
                     tags: ["Python", "Django", "JavaScript", "SQLite", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/blog",
-                    images: ["/images/projects/blog/1.png", "/images/projects/blog/2.png", "/images/projects/blog/3.png"]
+                    images: ["/images/projects/blog/1.webp", "/images/projects/blog/2.webp", "/images/projects/blog/3.webp"]
                 },
                 {
                     id: 4,
@@ -231,7 +231,7 @@ export const dictionaries = {
                     image: "/images/projects/benchmark/1.png",
                     tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
                     link: "https://github.com/sebbmon/ztbd-IT-equipment",
-                    images: ["/images/projects/benchmark/1.png", "/images/projects/benchmark/2.png"]
+                    images: ["/images/projects/benchmark/1.webp", "/images/projects/benchmark/2.webp"]
                 }
             ]
         },
