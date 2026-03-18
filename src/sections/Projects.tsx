@@ -8,6 +8,9 @@ import { Dictionary } from "@/components/dictionaries";
 
 export type Project = Dictionary["projects"]["items"][0];
 
+// 1 pixel svg as blur
+const BLUR_DATA_URL = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM4ODgiIGZpbGwtb3BhY2l0eT0iMC4yIi8+PC9zdmc+";
+
 export function Projects() {
     const { t } = useLanguage();
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -51,6 +54,8 @@ export function Projects() {
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    placeholder="blur"
+                                    blurDataURL={BLUR_DATA_URL}
                                 />
                             </div>
 
@@ -133,6 +138,8 @@ export function Projects() {
                                     alt={selectedProject.title}
                                     fill
                                     className="object-cover"
+                                    placeholder="blur"
+                                    blurDataURL={BLUR_DATA_URL}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
                             </div>
@@ -177,6 +184,8 @@ export function Projects() {
                                             fill
                                             className="object-cover transition-all duration-500 hover:scale-105 cursor-pointer"
                                             onClick={() => setZoomedImageIndex(currentImageIndex)}
+                                            placeholder="blur"
+                                            blurDataURL={BLUR_DATA_URL}
                                         />
 
                                         <button
@@ -283,6 +292,8 @@ export function Projects() {
                                 alt="Zoomed project image"
                                 fill
                                 className="object-contain rounded-lg shadow-2xl animate-fade-in-up pointer-events-auto"
+                                placeholder="blur"
+                                blurDataURL={BLUR_DATA_URL}
                             />
 
                             {selectedProject.images.length > 1 && (
@@ -306,8 +317,8 @@ export function Projects() {
                                         key={idx}
                                         onClick={() => setZoomedImageIndex(idx)}
                                         className={`relative h-12 w-16 sm:h-14 sm:w-20 md:h-16 md:w-24 rounded-md overflow-hidden transition-all duration-300 border-2 block ${idx === zoomedImageIndex
-                                                ? "border-primary scale-110 shadow-[0_0_10px_rgba(var(--primary),0.5)] opacity-100 z-10"
-                                                : "border-transparent opacity-40 hover:opacity-100 hover:scale-105"
+                                            ? "border-primary scale-110 shadow-[0_0_10px_rgba(var(--primary),0.5)] opacity-100 z-10"
+                                            : "border-transparent opacity-40 hover:opacity-100 hover:scale-105"
                                             }`}
                                     >
                                         <Image
@@ -316,6 +327,8 @@ export function Projects() {
                                             fill
                                             className="object-cover"
                                             sizes="150px"
+                                            placeholder="blur"
+                                            blurDataURL={BLUR_DATA_URL}
                                         />
                                     </button>
                                 ))}
