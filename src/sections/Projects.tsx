@@ -12,10 +12,11 @@ export function Projects() {
     const { t } = useLanguage();
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [zoomedImageIndex, setZoomedImageIndex] = useState<number | null>(null);
 
     // body scroll off when modal is open
     useEffect(() => {
-        if (selectedProject) {
+        if (selectedProject || zoomedImageIndex !== null) {
             document.body.style.overflow = 'hidden';
             setCurrentImageIndex(0);
         } else {
@@ -24,7 +25,7 @@ export function Projects() {
         return () => {
             document.body.style.overflow = '';
         };
-    }, [selectedProject]);
+    }, [selectedProject, zoomedImageIndex]);
 
     return (
         <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 bg-foreground/5 relative">
@@ -174,8 +175,19 @@ export function Projects() {
                                             src={selectedProject.images[currentImageIndex]}
                                             alt={`${selectedProject.title} gallery image ${currentImageIndex + 1}`}
                                             fill
-                                            className="object-cover transition-opacity duration-300"
+                                            className="object-cover transition-all duration-500 hover:scale-105 cursor-pointer"
+                                            onClick={() => setZoomedImageIndex(currentImageIndex)}
                                         />
+
+                                        <button
+                                            onClick={() => setZoomedImageIndex(currentImageIndex)}
+                                            className="absolute top-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity p-2 bg-background/60 hover:bg-background/90 backdrop-blur-md text-foreground rounded-full shadow-lg border border-foreground/10"
+                                            aria-label="Zoom image"
+                                        >
+                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                            </svg>
+                                        </button>
 
                                         {selectedProject.images.length > 1 && (
                                             <>
@@ -234,6 +246,80 @@ export function Projects() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                )}
+                {/* zoom */}
+                {zoomedImageIndex !== null && selectedProject && selectedProject.images && (
+                    <div className="fixed inset-0 z-[200] flex flex-col items-center p-4 sm:p-6">
+                        <div
+                            className="absolute inset-0 bg-black/95 backdrop-blur-xl transition-opacity cursor-pointer"
+                            onClick={() => setZoomedImageIndex(null)}
+                        ></div>
+                        <button
+                            onClick={() => setZoomedImageIndex(null)}
+                            className="absolute top-4 right-4 sm:top-6 sm:right-6 p-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-colors z-[210] backdrop-blur-md"
+                            aria-label="Close zoomed image"
+                        >
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+
+                        <div className="relative w-full flex-grow h-0 sm:h-auto sm:max-h-[80vh] z-[205] flex items-center justify-center pointer-events-none mt-12 sm:mt-4">
+                            {selectedProject.images.length > 1 && (
+                                <button
+                                    onClick={(e) => { e.stopPropagation(); setZoomedImageIndex(prev => prev! === 0 ? selectedProject.images!.length - 1 : prev! - 1); }}
+                                    className="absolute left-0 sm:left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 sm:p-4 bg-black/50 hover:bg-black/80 text-white rounded-full transition-all z-20 shadow-lg border border-white/10 pointer-events-auto group/prev"
+                                    aria-label="Previous image"
+                                >
+                                    <svg className="w-6 h-6 sm:w-8 sm:h-8 transform group-hover/prev:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                            )}
+
+                            <img
+                                src={selectedProject.images[zoomedImageIndex]}
+                                alt="Zoomed project image"
+                                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-fade-in-up pointer-events-auto"
+                            />
+
+                            {selectedProject.images.length > 1 && (
+                                <button
+                                    onClick={(e) => { e.stopPropagation(); setZoomedImageIndex(prev => prev! === selectedProject.images!.length - 1 ? 0 : prev! + 1); }}
+                                    className="absolute right-0 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 sm:p-4 bg-black/50 hover:bg-black/80 text-white rounded-full transition-all z-20 shadow-lg border border-white/10 pointer-events-auto group/next"
+                                    aria-label="Next image"
+                                >
+                                    <svg className="w-6 h-6 sm:w-8 sm:h-8 transform group-hover/next:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            )}
+                        </div>
+
+                        {/* wiersz miniaturek */}
+                        {selectedProject.images.length > 1 && (
+                            <div className="relative z-[205] mt-4 sm:mt-6 w-full max-w-4xl flex flex-wrap justify-center gap-2 sm:gap-3 px-2 sm:px-4 pb-2">
+                                {selectedProject.images.map((img, idx) => (
+                                    <button
+                                        key={idx}
+                                        onClick={() => setZoomedImageIndex(idx)}
+                                        className={`relative h-12 w-16 sm:h-14 sm:w-20 md:h-16 md:w-24 rounded-md overflow-hidden transition-all duration-300 border-2 block ${idx === zoomedImageIndex
+                                                ? "border-primary scale-110 shadow-[0_0_10px_rgba(var(--primary),0.5)] opacity-100 z-10"
+                                                : "border-transparent opacity-40 hover:opacity-100 hover:scale-105"
+                                            }`}
+                                    >
+                                        <Image
+                                            src={img}
+                                            alt={`Thumbnail ${idx + 1}`}
+                                            fill
+                                            className="object-cover"
+                                            sizes="150px"
+                                        />
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 )}
             </div>

@@ -24,7 +24,7 @@ export function Hero() {
                     />
                 </div>
 
-                {/* Social badges */}
+                {/* social badges */}
                 <div className="flex flex-wrap gap-3 justify-center mb-4">
                     <a
                         href="https://www.linkedin.com/in/sebastian-mondel/"

@@ -28,7 +28,7 @@ export const dictionaries = {
             items: [
                 {
                     id: 1,
-                    school: "Zespół Szkół Mechaniczno Elektrycznych",
+                    school: "Zespół Szkół Mechaniczno-Elektrycznych",
                     degree: "IT Technician",
                     period: "Sep 2017 - May 2021",
                     location: "Tarnów",
@@ -69,7 +69,7 @@ export const dictionaries = {
                     longDescription: "The main goal was to let admins control what content is shown and schedule it easily. I built the playlist and scheduling features using Angular and TypeScript, keeping the code modular so it is easier to maintain. I also set up Docker for the app, wrote a Docker Compose file to run multiple services together, and created a simple CI/CD pipeline to automate builds and deployments.",
                     features: ["User authentication", "Media content management", "Playlist management", "Scheduling", "RESTful API", "Real time device status"],
                     image: "/images/projects/signage/2.png",
-                    tags: ["TypeScript", "Angular", "Docker", "CI/CD", "Linux"],
+                    tags: ["TypeScript", "Angular", "HTML / CSS", "Docker", "Docker Compose", "CI/CD", "Linux"],
                     link: "https://github.com/sebbmon/digital-signage-frontend",
                     images: ["/images/projects/signage/1.png", "/images/projects/signage/2.png", "/images/projects/signage/3.png", "/images/projects/signage/4.png", "/images/projects/signage/5.png", "/images/projects/signage/6.png", "/images/projects/signage/7.png", "/images/projects/signage/8.png"]
                 },
@@ -80,9 +80,9 @@ export const dictionaries = {
                     longDescription: "The application allows users to browse the available fleet, post reviews, and features secure form handling to protect against SQL Injection attacks.",
                     features: ["User authentication", "User reviews", "Image gallery", "Contact form", "Fleet browsing", "Responsive Design"],
                     image: "/images/projects/moncar/1.png",
-                    tags: ["JavaScript", "PHP", "MySQL", "Bootstrap"],
+                    tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
-                    images: ["/images/projects/moncar/1.png", "/images/projects/moncar/2.png", "/images/projects/moncar/3.png", "/images/projects/moncar/4.png"]
+                    images: ["/images/projects/moncar/1.png", "/images/projects/moncar/2.png", "/images/projects/moncar/3.png", "/images/projects/moncar/4.png", "/images/projects/moncar/5.png"]
                 },
                 {
                     id: 3,
@@ -91,7 +91,7 @@ export const dictionaries = {
                     longDescription: "Developed a blogging application using Django. Implemented user authentication, post and comment management, and user profile views. Designed relational database models and handled data validation and permissions at the backend level.",
                     features: ["User authentication", "Post management - Full CRUD", "Comments system", "User profiles", "Pagination", "Responsive Design"],
                     image: "/images/projects/blog/1.png",
-                    tags: ["Python", "Django", "SQLite", "Bootstrap"],
+                    tags: ["Python", "Django", "JavaScript", "SQLite", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/blog",
                     images: ["/images/projects/blog/1.png", "/images/projects/blog/2.png", "/images/projects/blog/3.png"]
                 },
@@ -155,7 +155,7 @@ export const dictionaries = {
             items: [
                 {
                     id: 1,
-                    school: "Zespół Szkół Mechaniczno Elektrycznych",
+                    school: "Zespół Szkół Mechaniczno-Elektrycznych",
                     degree: "Technik Informatyk",
                     period: "Wrz 2017 - Maj 2021",
                     location: "Tarnów",
@@ -196,7 +196,7 @@ export const dictionaries = {
                     longDescription: "Głównym celem było umożliwienie administratorom łatwego kontrolowania i harmonogramowania wyświetlanych treści. Stworzyłem funkcje zarządzania listami odtwarzania za pomocą Angulara i TypeScripta, dbając o modułowość kodu. Wdrożyłem również środowisko oparte o Docker/Docker Compose i prosty system ciągłej integracji CI/CD.",
                     features: ["Uwierzytelnianie", "Zarządzanie mediami", "Zarządzanie playlistami", "Harmonogramowanie", "RESTful API", "Status urządzeń w czasie rzeczywistym"],
                     image: "/images/projects/signage/2.png",
-                    tags: ["TypeScript", "Angular", "Docker", "CI/CD", "Linux"],
+                    tags: ["TypeScript", "Angular", "HTML / CSS", "Docker", "Docker Compose", "CI/CD", "Linux"],
                     link: "https://github.com/sebbmon/digital-signage-frontend",
                     images: ["/images/projects/signage/1.png", "/images/projects/signage/2.png", "/images/projects/signage/3.png", "/images/projects/signage/4.png", "/images/projects/signage/5.png", "/images/projects/signage/6.png", "/images/projects/signage/7.png", "/images/projects/signage/8.png"]
                 },
@@ -207,9 +207,9 @@ export const dictionaries = {
                     longDescription: "Aplikacja pozwala użytkownikom na przeglądanie dostępnej floty pojazdów, dodawanie recenzji, oraz oferuje bezpieczną obsługę formularzy (zabezpieczoną m.in. przed atakami typu SQL Injection).",
                     features: ["Uwierzytelnianie", "Recenzje użytkowników", "Galeria zdjęć", "Formularz kontaktowy", "Przegląd floty", "Responsywny design"],
                     image: "/images/projects/moncar/1.png",
-                    tags: ["JavaScript", "PHP", "MySQL", "Bootstrap"],
+                    tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
-                    images: ["/images/projects/moncar/1.png", "/images/projects/moncar/2.png", "/images/projects/moncar/3.png", "/images/projects/moncar/4.png"]
+                    images: ["/images/projects/moncar/1.png", "/images/projects/moncar/2.png", "/images/projects/moncar/3.png", "/images/projects/moncar/4.png", "/images/projects/moncar/5.png"]
                 },
                 {
                     id: 3,
@@ -218,7 +218,7 @@ export const dictionaries = {
                     longDescription: "Zaprojektowałem i wdrożyłem aplikację blogową. Implementacja obejmuje system kont użytkowników, zarządzanie wpisami, komentarzami oraz widokiem profilu. Zaprojektowałem relacyjną bazę danych z walidacją danych na poziomie serwera.",
                     features: ["Logowanie", "Pełny CRUD dla postów", "System komentarzy", "Profile użytkowników", "Paginacja", "Responsywny design"],
                     image: "/images/projects/blog/1.png",
-                    tags: ["Python", "Django", "SQLite", "Bootstrap"],
+                    tags: ["Python", "Django", "JavaScript", "SQLite", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/blog",
                     images: ["/images/projects/blog/1.png", "/images/projects/blog/2.png", "/images/projects/blog/3.png"]
                 },
