@@ -116,8 +116,8 @@ export const dictionaries = {
             name: "Name",
             email: "Email",
             message: "Message",
-            namePlaceholder: "John Doe",
-            emailPlaceholder: "john@example.com",
+            namePlaceholder: "Your full name",
+            emailPlaceholder: "your@email.com",
             messagePlaceholder: "How can I help you?",
             send: "Send Message",
             sending: "Sending..."
@@ -243,8 +243,8 @@ export const dictionaries = {
             name: "Imię",
             email: "Email",
             message: "Wiadomość",
-            namePlaceholder: "Jan Kowalski",
-            emailPlaceholder: "jan@example.com",
+            namePlaceholder: "Imię i nazwisko",
+            emailPlaceholder: "twój@email.com",
             messagePlaceholder: "W czym mogę pomóc?",
             send: "Wyślij wiadomość",
             sending: "Wysyłanie..."
