@@ -68,7 +68,7 @@ export const dictionaries = {
                     description: "A system for displaying multimedia content on electronic screens to share information, advertisements and announcements in real time.",
                     longDescription: "The main goal was to let admins control what content is shown and schedule it easily. I built the playlist and scheduling features using Angular and TypeScript, keeping the code modular so it is easier to maintain. I also set up Docker for the app, wrote a Docker Compose file to run multiple services together, and created a simple CI/CD pipeline to automate builds and deployments.",
                     features: ["User authentication", "Media content management", "Playlist management", "Scheduling", "RESTful API", "Real time device status"],
-                    image: "/images/projects/signage/hero.png",
+                    image: "/images/projects/signage/2.webp",
                     tags: ["TypeScript", "Angular", "HTML / CSS", "Docker", "Docker Compose", "CI/CD", "Linux"],
                     link: "https://github.com/sebbmon/digital-signage-frontend",
                     images: ["/images/projects/signage/1.webp", "/images/projects/signage/2.webp", "/images/projects/signage/3.webp", "/images/projects/signage/4.webp", "/images/projects/signage/5.webp", "/images/projects/signage/6.webp", "/images/projects/signage/7.webp", "/images/projects/signage/8.webp"]
@@ -79,7 +79,7 @@ export const dictionaries = {
                     description: "Full-stack academic car rental system built with PHP, JavaScript and MySQL.",
                     longDescription: "The application allows users to browse the available fleet, post reviews, and features secure form handling to protect against SQL Injection attacks.",
                     features: ["User authentication", "User reviews", "Image gallery", "Contact form", "Fleet browsing", "Responsive Design"],
-                    image: "/images/projects/moncar/hero.png",
+                    image: "/images/projects/moncar/1.webp",
                     tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
                     images: ["/images/projects/moncar/1.webp", "/images/projects/moncar/2.webp", "/images/projects/moncar/3.webp", "/images/projects/moncar/4.webp", "/images/projects/moncar/5.webp"]
@@ -90,7 +90,7 @@ export const dictionaries = {
                     description: "A blog application built with Python, Django Templates which allows user to create and manage posts.",
                     longDescription: "Developed a blogging application using Django. Implemented user authentication, post and comment management, and user profile views. Designed relational database models and handled data validation and permissions at the backend level.",
                     features: ["User authentication", "Post management - Full CRUD", "Comments system", "User profiles", "Pagination", "Responsive Design"],
-                    image: "/images/projects/blog/hero.png",
+                    image: "/images/projects/blog/1.webp",
                     tags: ["Python", "Django", "JavaScript", "SQLite", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/blog",
                     images: ["/images/projects/blog/1.webp", "/images/projects/blog/2.webp", "/images/projects/blog/3.webp"]
@@ -101,7 +101,7 @@ export const dictionaries = {
                     description: "Performance comparison of relational and NoSQL databases using a large-scale dataset and automated test scenarios.",
                     longDescription: "A large-scale benchmark project comparing the performance of relational and NoSQL database systems. The environment was fully containerized using Docker Compose and included MySQL, PostgreSQL, MongoDB, and Cassandra. The system generated over 10 million records using Python and Faker and executed multiple query scenarios to evaluate performance, scalability, and response times across different database architectures.",
                     features: ["Benchmark of four database engines (MySQL, PostgreSQL, MongoDB, Cassandra)", "Automated generation of 10 million records using Python and Faker", "24 database query performance scenarios", "Fully containerized test environment using Docker Compose", "Comparative analysis of relational vs NoSQL databases"],
-                    image: "/images/projects/benchmark/hero.png",
+                    image: "/images/projects/benchmark/1.webp",
                     tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
                     link: "https://github.com/sebbmon/ztbd-IT-equipment",
                     images: ["/images/projects/benchmark/1.webp", "/images/projects/benchmark/2.webp"]
@@ -195,7 +195,7 @@ export const dictionaries = {
                     description: "System do wyświetlania treści multimedialnych na ekranach w celu udostępniania informacji, ogłoszeń i reklam w czasie rzeczywistym.",
                     longDescription: "Głównym celem było umożliwienie administratorom łatwego kontrolowania i harmonogramowania wyświetlanych treści. Stworzyłem funkcje zarządzania listami odtwarzania za pomocą Angulara i TypeScripta, dbając o modułowość kodu. Wdrożyłem również środowisko oparte o Docker/Docker Compose i prosty system ciągłej integracji CI/CD.",
                     features: ["Uwierzytelnianie", "Zarządzanie mediami", "Zarządzanie playlistami", "Harmonogramowanie", "RESTful API", "Status urządzeń w czasie rzeczywistym"],
-                    image: "/images/projects/signage/hero.png",
+                    image: "/images/projects/signage/2.webp",
                     tags: ["TypeScript", "Angular", "HTML / CSS", "Docker", "Docker Compose", "CI/CD", "Linux"],
                     link: "https://github.com/sebbmon/digital-signage-frontend",
                     images: ["/images/projects/signage/1.webp", "/images/projects/signage/2.webp", "/images/projects/signage/3.webp", "/images/projects/signage/4.webp", "/images/projects/signage/5.webp", "/images/projects/signage/6.webp", "/images/projects/signage/7.webp", "/images/projects/signage/8.webp"]
@@ -206,7 +206,7 @@ export const dictionaries = {
                     description: "Akademicki projekt wypożyczalni samochodów oparty o PHP, JavaScript i MySQL.",
                     longDescription: "Aplikacja pozwala użytkownikom na przeglądanie dostępnej floty pojazdów, dodawanie recenzji, oraz oferuje bezpieczną obsługę formularzy (zabezpieczoną m.in. przed atakami typu SQL Injection).",
                     features: ["Uwierzytelnianie", "Recenzje użytkowników", "Galeria zdjęć", "Formularz kontaktowy", "Przegląd floty", "Responsywny design"],
-                    image: "/images/projects/moncar/hero.png",
+                    image: "/images/projects/moncar/1.webp",
                     tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
                     images: ["/images/projects/moncar/1.webp", "/images/projects/moncar/2.webp", "/images/projects/moncar/3.webp", "/images/projects/moncar/4.webp", "/images/projects/moncar/5.webp"]
@@ -217,7 +217,7 @@ export const dictionaries = {
                     description: "Aplikacja blogowa zbudowana z użyciem Pythona i Django Templates, pozwalająca użytkownikom na tworzenie i zarządzanie wpisami.",
                     longDescription: "Zaprojektowałem i wdrożyłem aplikację blogową. Implementacja obejmuje system kont użytkowników, zarządzanie wpisami, komentarzami oraz widokiem profilu. Zaprojektowałem relacyjną bazę danych z walidacją danych na poziomie serwera.",
                     features: ["Logowanie", "Pełny CRUD dla postów", "System komentarzy", "Profile użytkowników", "Paginacja", "Responsywny design"],
-                    image: "/images/projects/blog/hero.png",
+                    image: "/images/projects/blog/1.webp",
                     tags: ["Python", "Django", "JavaScript", "SQLite", "HTML / CSS", "Bootstrap"],
                     link: "https://github.com/sebbmon/blog",
                     images: ["/images/projects/blog/1.webp", "/images/projects/blog/2.webp", "/images/projects/blog/3.webp"]
@@ -228,7 +228,7 @@ export const dictionaries = {
                     description: "Porównanie wydajności relacyjnych i nierelacyjnych baz danych z użyciem dużego zbioru danych oraz scenariuszy testowych.",
                     longDescription: "Projekt benchmarkowy porównujący wydajność relacyjnych i nierelacyjnych systemów baz danych. Środowisko testowe zostało w pełni skonteneryzowane przy użyciu Docker Compose i obejmowało bazy MySQL, PostgreSQL, MongoDB oraz Cassandra. System wygenerował ponad 10 milionów rekordów przy użyciu Pythona i biblioteki Faker, a następnie wykonał wiele scenariuszy zapytań w celu oceny wydajności, skalowalności oraz czasu odpowiedzi różnych architektur baz danych.",
                     features: ["Zarządzanie zadaniami", "Zmiana statusów zadań", "Priorytetyzacja zadań", "Sortowanie i filtrowanie", "Responsywny design"],
-                    image: "/images/projects/benchmark/hero.png",
+                    image: "/images/projects/benchmark/1.webp",
                     tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
                     link: "https://github.com/sebbmon/ztbd-IT-equipment",
                     images: ["/images/projects/benchmark/1.webp", "/images/projects/benchmark/2.webp"]
