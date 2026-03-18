@@ -11,7 +11,7 @@ export const dictionaries = {
             collab: "Available for new opportunities",
             greeting: "Hello, my name is",
             name: "Sebastian",
-            tagline: "I build exceptional and accessible digital experiences for the web. Focused on minimal design and simplicity.",
+            tagline: "I create clean, functional web applications that solve real-world problems, emphasizing simplicity and performance.",
             viewWork: "View My Work",
             contactMe: "Contact Me"
         },
@@ -138,7 +138,7 @@ export const dictionaries = {
             collab: "Otwarty na podjęcie współpracy",
             greeting: "Cześć, jestem",
             name: "Sebastian",
-            tagline: "Projektuję i tworzę nowoczesne aplikacje webowe, koncentrując się na prostocie i minimalistycznym designie.",
+            tagline: "Tworzę czyste i funkcjonalne aplikacje internetowe, które rozwiązują realne problemy, kładąc nacisk na prostotę i wydajność.",
             viewWork: "Moje projekty",
             contactMe: "Skontaktuj się"
         },
