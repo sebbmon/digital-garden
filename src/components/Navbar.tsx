@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { useLanguage } from "./LanguageContext";
 
 export function Navbar() {
@@ -101,9 +102,11 @@ export function Navbar() {
                             aria-label="Toggle language"
                             title={language === 'en' ? "Switch to Polish" : "Switch to English"}
                         >
-                            <img
+                            <Image
                                 src={language === 'en' ? "https://flagcdn.com/w40/gb.png" : "https://flagcdn.com/w40/pl.png"}
                                 alt={language === 'en' ? "English" : "Polski"}
+                                width={40}
+                                height={40}
                                 className="w-full h-full object-cover rounded-full"
                             />
                         </button>

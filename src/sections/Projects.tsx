@@ -278,10 +278,11 @@ export function Projects() {
                                 </button>
                             )}
 
-                            <img
+                            <Image
                                 src={selectedProject.images[zoomedImageIndex]}
                                 alt="Zoomed project image"
-                                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-fade-in-up pointer-events-auto"
+                                fill
+                                className="object-contain rounded-lg shadow-2xl animate-fade-in-up pointer-events-auto"
                             />
 
                             {selectedProject.images.length > 1 && (
