@@ -4,6 +4,7 @@ import "./globals.css";
 import { Language } from "@/components/dictionaries";
 import { LanguageProvider } from "@/components/LanguageContext";
 import { cookies } from "next/headers";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,7 @@ export default async function RootLayout({
         <LanguageProvider initialLanguage={initialLanguage}>
           {children}
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
