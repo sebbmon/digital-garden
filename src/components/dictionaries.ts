@@ -65,7 +65,7 @@ export const dictionaries = {
                 {
                     id: 1,
                     title: "Remote Display Management Platform",
-                    description: "A system for displaying multimedia content on electronic screens to share information, advertisements and announcements in real time.",
+                    description: "A system for displaying multimedia content on electronic screens connected to Raspberry Pi to share information, advertisements and announcements in real time.",
                     longDescription: "The main goal was to let admins control what content is shown and schedule it easily. I built the playlist and scheduling features using Angular and TypeScript, keeping the code modular so it is easier to maintain. I also set up Docker for the app, wrote a Docker Compose file to run multiple services together, and created a simple CI/CD pipeline to automate builds and deployments.",
                     features: ["User authentication", "Media content management", "Playlist management", "Scheduling", "RESTful API", "Real time device status"],
                     image: "/images/projects/signage/2.webp",
@@ -192,7 +192,7 @@ export const dictionaries = {
                 {
                     id: 1,
                     title: "Zdalny System Zarządzania Treścią Wideo",
-                    description: "System do wyświetlania treści multimedialnych na ekranach w celu udostępniania informacji, ogłoszeń i reklam w czasie rzeczywistym.",
+                    description: "System do wyświetlania treści multimedialnych na ekranach podłączonych do Raspberry Pi w celu udostępniania informacji, ogłoszeń i reklam w czasie rzeczywistym.",
                     longDescription: "Głównym celem było umożliwienie administratorom łatwego kontrolowania i harmonogramowania wyświetlanych treści. Stworzyłem funkcje zarządzania listami odtwarzania za pomocą Angulara i TypeScripta, dbając o modułowość kodu. Wdrożyłem również środowisko oparte o Docker/Docker Compose i prosty system ciągłej integracji CI/CD.",
                     features: ["Uwierzytelnianie", "Zarządzanie mediami", "Zarządzanie playlistami", "Harmonogramowanie", "RESTful API", "Status urządzeń w czasie rzeczywistym"],
                     image: "/images/projects/signage/2.webp",
