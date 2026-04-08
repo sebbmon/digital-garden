@@ -64,7 +64,7 @@ export const dictionaries = {
             items: [
                 {
                     id: 1,
-                    title: "Remote Display Management Platform",
+                    title: "Digital Signage Raspberry Pi - Remote Display Management Platform",
                     description: "A system for displaying multimedia content on electronic screens connected to Raspberry Pi to share information, advertisements and announcements in real time.",
                     longDescription: "The main goal was to let admins control what content is shown and schedule it easily. I built the playlist and scheduling features using Angular and TypeScript, keeping the code modular so it is easier to maintain. I also set up Docker for the app, wrote a Docker Compose file to run multiple services together, and created a simple CI/CD pipeline to automate builds and deployments.",
                     features: ["User authentication", "Media content management", "Playlist management", "Scheduling", "RESTful API", "Real time device status"],
@@ -75,17 +75,28 @@ export const dictionaries = {
                 },
                 {
                     id: 2,
-                    title: "MonCar - Car Rental Company",
-                    description: "Full-stack academic car rental system built with PHP, JavaScript and MySQL.",
-                    longDescription: "The application allows users to browse the available fleet, post reviews, and features secure form handling to protect against SQL Injection attacks.",
-                    features: ["User authentication", "User reviews", "Image gallery", "Contact form", "Fleet browsing", "Responsive Design"],
-                    image: "/images/projects/moncar/1.webp",
-                    tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
-                    link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
-                    images: ["/images/projects/moncar/1.webp", "/images/projects/moncar/2.webp", "/images/projects/moncar/3.webp", "/images/projects/moncar/4.webp", "/images/projects/moncar/5.webp"]
+                    title: "Hardware Hub - Hardware rental system for an IT company",
+                    description: "Full-stack hardware rental system  built with TypeScript, Next.js and PostgreSQL.",
+                    longDescription: "The application allows users to browse the available devices and rent them. I implemented permissions in order to allow administrators to manage hardware (Full CRUD), and protected renting mechanism against race conditions.",
+                    features: ["User authentication (Full JWT flow with HttpOnly cookies)", "Race condition protection", "REST API", "AI-powered Semantic Search (Gemini API)", "Permissions", "Responsive Design", "Deployment on Render and Vercel"],
+                    image: "/images/projects/hardware/2.webp",
+                    tags: ["Python", "Django", "Django REST Framework", "TypeScript", "Next.js", "Axios", "PostgreSQL", "Docker", "Tailwind", "CI/CD"],
+                    link: "https://github.com/sebbmon/hardware-manager",
+                    images: ["/images/projects/hardware/1.webp", "/images/projects/hardware/2.webp", "/images/projects/hardware/3.webp", "/images/projects/hardware/4.webp", "/images/projects/hardware/5.webp"]
                 },
                 {
                     id: 3,
+                    title: "Database Performance Benchmark",
+                    description: "Performance comparison of relational and NoSQL databases using a large-scale dataset and automated test scenarios.",
+                    longDescription: "A large-scale benchmark project comparing the performance of relational and NoSQL database systems. The environment was fully containerized using Docker Compose and included MySQL, PostgreSQL, MongoDB, and Cassandra. The system generated over 10 million records using Python and Faker and executed multiple query scenarios to evaluate performance, scalability, and response times across different database architectures.",
+                    features: ["Benchmark of four database engines (MySQL, PostgreSQL, MongoDB, Cassandra)", "Automated generation of 10 million records using Python and Faker", "24 database query performance scenarios", "Fully containerized test environment using Docker Compose", "Comparative analysis of relational vs NoSQL databases"],
+                    image: "/images/projects/benchmark/1.webp",
+                    tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
+                    link: "https://github.com/sebbmon/ztbd-IT-equipment",
+                    images: ["/images/projects/benchmark/1.webp", "/images/projects/benchmark/2.webp"]
+                },
+                {
+                    id: 4,
                     title: "Blog Application",
                     description: "A blog application built with Python, Django Templates which allows user to create and manage posts.",
                     longDescription: "Developed a blogging application using Django. Implemented user authentication, post and comment management, and user profile views. Designed relational database models and handled data validation and permissions at the backend level.",
@@ -96,15 +107,26 @@ export const dictionaries = {
                     images: ["/images/projects/blog/1.webp", "/images/projects/blog/2.webp", "/images/projects/blog/3.webp"]
                 },
                 {
-                    id: 4,
-                    title: "Database Performance Benchmark",
-                    description: "Performance comparison of relational and NoSQL databases using a large-scale dataset and automated test scenarios.",
-                    longDescription: "A large-scale benchmark project comparing the performance of relational and NoSQL database systems. The environment was fully containerized using Docker Compose and included MySQL, PostgreSQL, MongoDB, and Cassandra. The system generated over 10 million records using Python and Faker and executed multiple query scenarios to evaluate performance, scalability, and response times across different database architectures.",
-                    features: ["Benchmark of four database engines (MySQL, PostgreSQL, MongoDB, Cassandra)", "Automated generation of 10 million records using Python and Faker", "24 database query performance scenarios", "Fully containerized test environment using Docker Compose", "Comparative analysis of relational vs NoSQL databases"],
-                    image: "/images/projects/benchmark/1.webp",
-                    tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
-                    link: "https://github.com/sebbmon/ztbd-IT-equipment",
-                    images: ["/images/projects/benchmark/1.webp", "/images/projects/benchmark/2.webp"]
+                    id: 5,
+                    title: "MonCar - Car Rental Company",
+                    description: "Full-stack academic car rental system built with PHP, JavaScript and MySQL.",
+                    longDescription: "The application allows users to browse the available fleet, post reviews, and features secure form handling to protect against SQL Injection attacks.",
+                    features: ["User authentication", "User reviews", "Image gallery", "Contact form", "Fleet browsing", "Responsive Design"],
+                    image: "/images/projects/moncar/1.webp",
+                    tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
+                    link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
+                    images: ["/images/projects/moncar/1.webp", "/images/projects/moncar/2.webp", "/images/projects/moncar/3.webp", "/images/projects/moncar/4.webp", "/images/projects/moncar/5.webp"]
+                },
+                {
+                    id: 6,
+                    title: "Data Science Assistant",
+                    description: "A Python tool for automating the Machine Learning process.",
+                    longDescription: "The app allows the user to carry out the entire Data Science process, covering everything from raw data ingestion and preprocessing to training and evaluating predictive models.",
+                    features: ["Multi-format Data Ingestion", "Interactive Exploratory Data Analysis (EDA)", "Advanced Data Preprocessing Pipeline", "End-to-End Machine Learning Workflow", "Automated Hyperparameter Optimization", "Comprehensive Model Evaluation"],
+                    image: "/images/projects/streamlit/3.webp",
+                    tags: ["Python", "Streamlit", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
+                    link: "https://github.com/sebbmon/data-science-assistant",
+                    images: ["/images/projects/streamlit/1.webp", "/images/projects/streamlit/2.webp", "/images/projects/streamlit/3.webp", "/images/projects/streamlit/4.webp", "/images/projects/streamlit/5.webp", "/images/projects/streamlit/6.webp"]
                 }
             ]
         },
@@ -191,7 +213,7 @@ export const dictionaries = {
             items: [
                 {
                     id: 1,
-                    title: "Zdalny System Zarządzania Treścią Wideo",
+                    title: "Digital Signage Raspberry Pi - Zdalny System Zarządzania Treścią Wideo",
                     description: "System do wyświetlania treści multimedialnych na ekranach podłączonych do Raspberry Pi w celu udostępniania informacji, ogłoszeń i reklam w czasie rzeczywistym.",
                     longDescription: "Głównym celem było umożliwienie administratorom łatwego kontrolowania i harmonogramowania wyświetlanych treści. Stworzyłem funkcje zarządzania listami odtwarzania za pomocą Angulara i TypeScripta, dbając o modułowość kodu. Wdrożyłem również środowisko oparte o Docker/Docker Compose i prosty system ciągłej integracji CI/CD.",
                     features: ["Uwierzytelnianie", "Zarządzanie mediami", "Zarządzanie playlistami", "Harmonogramowanie", "RESTful API", "Status urządzeń w czasie rzeczywistym"],
@@ -202,14 +224,14 @@ export const dictionaries = {
                 },
                 {
                     id: 2,
-                    title: "MonCar - Wypożyczalnia samochodów",
-                    description: "Akademicki projekt wypożyczalni samochodów oparty o PHP, JavaScript i MySQL.",
-                    longDescription: "Aplikacja pozwala użytkownikom na przeglądanie dostępnej floty pojazdów, dodawanie recenzji, oraz oferuje bezpieczną obsługę formularzy (zabezpieczoną m.in. przed atakami typu SQL Injection).",
-                    features: ["Uwierzytelnianie", "Recenzje użytkowników", "Galeria zdjęć", "Formularz kontaktowy", "Przegląd floty", "Responsywny design"],
-                    image: "/images/projects/moncar/1.webp",
-                    tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
-                    link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
-                    images: ["/images/projects/moncar/1.webp", "/images/projects/moncar/2.webp", "/images/projects/moncar/3.webp", "/images/projects/moncar/4.webp", "/images/projects/moncar/5.webp"]
+                    title: "Hardware Hub - System wypożyczania sprzętu dla firmy IT",
+                    description: "Full-stackowy system wypożyczania sprzętu zbudowany przy użyciu TypeScript, Next.js i PostgreSQL.",
+                    longDescription: "Aplikacja pozwala użytkownikom przeglądać dostępne urządzenia i je wypożyczać. Zaimplementowałem uprawnienia, aby umożliwić administratorom zarządzanie sprzętem (pełny CRUD), oraz zabezpieczyłem mechanizm wypożyczania przed race conditions.",
+                    features: ["Uwierzytelnianie użytkownika (pełny JWT z HttpOnly cookies)", "Ochrona przed race condition", "REST API", "Semantyczne wyszukiwanie wspierane przez AI (Gemini API)", "Uprawnienia", "Responsywny design", "Wdrożenie na Render i Vercel"],
+                    image: "/images/projects/hardware/2.webp",
+                    tags: ["Python", "Django", "Django REST Framework", "TypeScript", "Next.js", "Axios", "PostgreSQL", "Docker", "Tailwind", "CI/CD"],
+                    link: "https://github.com/sebbmon/hardware-manager",
+                    images: ["/images/projects/hardware/1.webp", "/images/projects/hardware/2.webp", "/images/projects/hardware/3.webp", "/images/projects/hardware/4.webp", "/images/projects/hardware/5.webp"]
                 },
                 {
                     id: 3,
@@ -232,6 +254,28 @@ export const dictionaries = {
                     tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
                     link: "https://github.com/sebbmon/ztbd-IT-equipment",
                     images: ["/images/projects/benchmark/1.webp", "/images/projects/benchmark/2.webp"]
+                },
+                {
+                    id: 5,
+                    title: "MonCar - Wypożyczalnia samochodów",
+                    description: "Akademicki projekt wypożyczalni samochodów oparty o PHP, JavaScript i MySQL.",
+                    longDescription: "Aplikacja pozwala użytkownikom na przeglądanie dostępnej floty pojazdów, dodawanie recenzji, oraz oferuje bezpieczną obsługę formularzy (zabezpieczoną m.in. przed atakami typu SQL Injection).",
+                    features: ["Uwierzytelnianie", "Recenzje użytkowników", "Galeria zdjęć", "Formularz kontaktowy", "Przegląd floty", "Responsywny design"],
+                    image: "/images/projects/moncar/1.webp",
+                    tags: ["JavaScript", "PHP", "MySQL", "HTML / CSS", "Bootstrap"],
+                    link: "https://github.com/sebbmon/moncar-car-rental-fullstack",
+                    images: ["/images/projects/moncar/1.webp", "/images/projects/moncar/2.webp", "/images/projects/moncar/3.webp", "/images/projects/moncar/4.webp", "/images/projects/moncar/5.webp"]
+                },
+                {
+                    id: 6,
+                    title: "Data Science Assistant",
+                    description: "Narzędzie w Pythonie do automatyzacji procesu Machine Learning.",
+                    longDescription: "Aplikacja pozwala użytkownikowi przeprowadzić cały proces Data Science, obejmując wszystko od wczytywania surowych danych i ich wstępnego przetwarzania po trenowanie i ocenę modeli predykcyjnych.",
+                    features: ["Wczytywanie danych w wielu formatach", "Interaktywna eksploracyjna analiza danych (EDA)", "Zaawansowany pipeline wstępnego przetwarzania danych", "Kompletny workflow Machine Learning end-to-end", "Automatyczna optymalizacja hiperparametrów", "Kompleksowa ewaluacja modeli"],
+                    image: "/images/projects/streamlit/3.webp",
+                    tags: ["Python", "Streamlit", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
+                    link: "https://github.com/sebbmon/data-science-assistant",
+                    images: ["/images/projects/streamlit/1.webp", "/images/projects/streamlit/2.webp", "/images/projects/streamlit/3.webp", "/images/projects/streamlit/4.webp", "/images/projects/streamlit/5.webp", "/images/projects/streamlit/6.webp"]
                 }
             ]
         },
