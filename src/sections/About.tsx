@@ -13,16 +13,18 @@ export function About() {
             "CSS",
             "Angular",
             "Next.js",
+            "Axios",
             "Tailwind",
             "Bootstrap"
         ],
-        Backend: ["Python", "Django", "REST APIs"],
+        Backend: ["Python", "Django", "Django REST Framework"],
         Databases: ["Relational databases", "NoSQL databases"],
         "DevOps & Cloud": [
             "Docker",
             "Docker Compose",
             "CI/CD",
-            "Azure"
+            "Azure",
+            "Nginx"
         ],
         Tools: [
             "Git",
@@ -32,7 +34,8 @@ export function About() {
         Concepts: [
             "Web application architecture",
             "Debugging",
-            "Basic automated testing"
+            "Basic automated testing",
+            "REST APIs"
         ]
     };
 
