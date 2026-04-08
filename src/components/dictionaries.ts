@@ -82,7 +82,7 @@ export const dictionaries = {
                     image: "/images/projects/hardware/2.webp",
                     tags: ["Python", "Django", "Django REST Framework", "TypeScript", "Next.js", "Axios", "PostgreSQL", "Docker", "Tailwind", "CI/CD"],
                     link: "https://github.com/sebbmon/hardware-manager",
-                    images: ["/images/projects/hardware/1.webp", "/images/projects/hardware/2.webp", "/images/projects/hardware/3.webp", "/images/projects/hardware/4.webp", "/images/projects/hardware/5.webp"]
+                    images: ["/images/projects/hardware/1.webp", "/images/projects/hardware/2.webp", "/images/projects/hardware/3.webp", "/images/projects/hardware/4.webp", "/images/projects/hardware/5.webp", "/images/projects/hardware/6.webp"]
                 },
                 {
                     id: 3,
@@ -231,7 +231,7 @@ export const dictionaries = {
                     image: "/images/projects/hardware/2.webp",
                     tags: ["Python", "Django", "Django REST Framework", "TypeScript", "Next.js", "Axios", "PostgreSQL", "Docker", "Tailwind", "CI/CD"],
                     link: "https://github.com/sebbmon/hardware-manager",
-                    images: ["/images/projects/hardware/1.webp", "/images/projects/hardware/2.webp", "/images/projects/hardware/3.webp", "/images/projects/hardware/4.webp", "/images/projects/hardware/5.webp"]
+                    images: ["/images/projects/hardware/1.webp", "/images/projects/hardware/2.webp", "/images/projects/hardware/3.webp", "/images/projects/hardware/4.webp", "/images/projects/hardware/5.webp", "/images/projects/hardware/6.webp"]
                 },
                 {
                     id: 3,
