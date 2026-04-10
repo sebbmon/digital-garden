@@ -235,17 +235,6 @@ export const dictionaries = {
                 },
                 {
                     id: 3,
-                    title: "Aplikacja Blog",
-                    description: "Aplikacja blogowa zbudowana z użyciem Pythona i Django Templates, pozwalająca użytkownikom na tworzenie i zarządzanie wpisami.",
-                    longDescription: "Zaprojektowałem i wdrożyłem aplikację blogową. Implementacja obejmuje system kont użytkowników, zarządzanie wpisami, komentarzami oraz widokiem profilu. Zaprojektowałem relacyjną bazę danych z walidacją danych na poziomie serwera.",
-                    features: ["Logowanie", "Pełny CRUD dla postów", "System komentarzy", "Profile użytkowników", "Paginacja", "Responsywny design"],
-                    image: "/images/projects/blog/1.webp",
-                    tags: ["Python", "Django", "JavaScript", "SQLite", "HTML / CSS", "Bootstrap"],
-                    link: "https://github.com/sebbmon/blog",
-                    images: ["/images/projects/blog/1.webp", "/images/projects/blog/2.webp", "/images/projects/blog/3.webp"]
-                },
-                {
-                    id: 4,
                     title: "Benchmark wydajności baz danych",
                     description: "Porównanie wydajności relacyjnych i nierelacyjnych baz danych z użyciem dużego zbioru danych oraz scenariuszy testowych.",
                     longDescription: "Projekt benchmarkowy porównujący wydajność relacyjnych i nierelacyjnych systemów baz danych. Środowisko testowe zostało w pełni skonteneryzowane przy użyciu Docker Compose i obejmowało bazy MySQL, PostgreSQL, MongoDB oraz Cassandra. System wygenerował ponad 10 milionów rekordów przy użyciu Pythona i biblioteki Faker, a następnie wykonał wiele scenariuszy zapytań w celu oceny wydajności, skalowalności oraz czasu odpowiedzi różnych architektur baz danych.",
@@ -254,6 +243,17 @@ export const dictionaries = {
                     tags: ["Python", "Docker", "Docker Compose", "MySQL", "PostgreSQL", "MongoDB", "Cassandra"],
                     link: "https://github.com/sebbmon/ztbd-IT-equipment",
                     images: ["/images/projects/benchmark/1.webp", "/images/projects/benchmark/2.webp"]
+                },
+                {
+                    id: 4,
+                    title: "Aplikacja Blog",
+                    description: "Aplikacja blogowa zbudowana z użyciem Pythona i Django Templates, pozwalająca użytkownikom na tworzenie i zarządzanie wpisami.",
+                    longDescription: "Zaprojektowałem i wdrożyłem aplikację blogową. Implementacja obejmuje system kont użytkowników, zarządzanie wpisami, komentarzami oraz widokiem profilu. Zaprojektowałem relacyjną bazę danych z walidacją danych na poziomie serwera.",
+                    features: ["Logowanie", "Pełny CRUD dla postów", "System komentarzy", "Profile użytkowników", "Paginacja", "Responsywny design"],
+                    image: "/images/projects/blog/1.webp",
+                    tags: ["Python", "Django", "JavaScript", "SQLite", "HTML / CSS", "Bootstrap"],
+                    link: "https://github.com/sebbmon/blog",
+                    images: ["/images/projects/blog/1.webp", "/images/projects/blog/2.webp", "/images/projects/blog/3.webp"]
                 },
                 {
                     id: 5,
